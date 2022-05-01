@@ -13,6 +13,8 @@ sort(v.begin(),v.end());
 //vector反转
 #include<algorithm>
 reverse(v.begin(),v.end());
+//删除最后一个元素
+vector.pop_back();
 ```
 
 2. 正无穷为```INT_MAX```，负无穷为```INT_MIN```
