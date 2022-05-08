@@ -15,6 +15,8 @@ sort(v.begin(),v.end());
 reverse(v.begin(),v.end());
 //删除最后一个元素
 vector.pop_back();
+//复制vector
+v1.swap(v2);
 ```
 
 2. 正无穷为```INT_MAX```，负无穷为```INT_MIN```
