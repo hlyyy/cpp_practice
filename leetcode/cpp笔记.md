@@ -63,3 +63,15 @@ head -> next = l;
 while (l->next != nullptr) {...}
 ```
 
+7. map容器
+
+```c++
+map<int,string> s;	//定义一个map容器
+map.insert(pair<int,string>(111,"abc")); //插入键值对(111,"abc")
+map<int,string>::iterator it;		//定义一个迭代器
+it=s.find(111);	//寻找键值为111的元素，没找到就返回map尾部的迭代器
+if(it!=s.end())	s.erase(it);	//删除键值为111的元素
+//插入键值对
+s[222] = "abc";
+```
+
