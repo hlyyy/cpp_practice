@@ -7,14 +7,33 @@
 for (vector<int>::iterator i = s.begin();i != s.end();i++) {
   cout << *i << endl;
 }
+
 //vector排序，默认升序
 #include<algorithm>
 sort(v.begin(),v.end());
+
+//自定义sort比较函数(二维vector以第一列从大到小，第二列从小到大排序)
+//若定义在类中,自定义函数要加上static
+static bool cmp(vector<int>& a,vector<int>& b) {
+    if (a[0]>b[0])
+      return true;
+    else if (a[0] == b[0])
+      return a[1] < b[1];
+    else
+      return false;
+}
+sort(v.begin(),v,end(),cmp)
+  
+//vector插入元素
+v.insert(v.begin()+3,1)
+
 //vector反转
 #include<algorithm>
 reverse(v.begin(),v.end());
+
 //删除最后一个元素
 vector.pop_back();
+
 //复制vector
 v1.swap(v2);
 ```
