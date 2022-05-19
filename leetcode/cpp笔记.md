@@ -35,6 +35,7 @@ reverse(v.begin(),v.end());
 vector.pop_back();
 
 //复制vector
+vector<int> v1(v2);
 v1.swap(v2);
 ```
 
